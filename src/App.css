@@ -36,15 +36,23 @@
 
 .landing-page {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .tagline {
   margin-top: 8vh;
+  font-size: 2rem;
 }
 
 .intro-name {
-  font-size: 6rem;
+  font-size: 4rem;
+}
+
+.arrows {
+  max-width: 3vw;
+  position: absolute;
+  bottom: 2%;
+  color: #f0db4f ;
 }
 
 /* ////////////////////////About Page/////////////////////// */
@@ -66,30 +74,37 @@
 }
 
 .about-component {
-  margin-top: 20vh;
+  margin-top: 10vh;
   justify-content: left;
   margin-left: 8vh;
   margin-right: 8vh;
   align-self: flex-start;
-  width: 50%;
+  width: 100%;
 }
 
 .tech-component {
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-right: 8vh;
   align-self: flex-start;
-  margin-left: 8vh;
+  /* margin-left: 8vh; */
   margin-right: 8vh;
   align-content: flex-end;
-  width: 50%;
+  max-width: 50%;
 }
 
 .tech-content {
   margin-top: 8vh;
+  font-size: 15pt;
+  width: 100%;
 }
 
 .about-me-content {
   margin-top: 8vh;
+  font-size: 12pt;
+  max-width: 100%;
+}
+.tech-title {
+  width: 100%;
 }
 
 /* ///////////////////Particles///////////////////////////// */
@@ -100,3 +115,5 @@
   width: 100vw;
   height: 100vh;
 }
+
+

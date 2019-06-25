@@ -12,7 +12,7 @@ const ParticlesComponent = () => {
         params={{
           particles: {
             size: {
-              value: 3
+              value: 2
             },
             line_linked: {
               color: "#f9f500"

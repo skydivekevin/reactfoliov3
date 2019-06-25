@@ -8,15 +8,15 @@ const Tech = () => {
       <div className='tech-title'>Tech</div>
       <div className='tech-content'>
         <ul>
-          <li>React</li>
+          <li>Blah</li>
+          <li>Blah</li>
+          <li>Blah</li>
           <li>Node</li>
-          <li>Express</li>
-          <li>Ruby on Rails</li>
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
+          <li>Something</li>
+          <li>javaScript</li>
+          <li>whatever</li>
+          <li>communication</li>
+          <li>stuff</li>
         </ul>
       </div>
     </div>
