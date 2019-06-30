@@ -5,35 +5,50 @@ import Particles from "react-particles-js";
 import "../../../src/App.css";
 
 const ParticlesComponent = () => {
-  // 80 stock; if under 420 I want 30
+  // 80 if window size >= 420; if window size <= 420 I want 30
 
   ///////////////////TESTING/////////////////////
+  /////////////////STATIC////////////////////
+  let numParts;
 
-  //////////////////DYNAMIC////////////////////
+  setNumParts();
 
-  const [value, setDimensions] = useState({
-    numParts: 50
-  });
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth >= 420) {
-        setDimensions({
-          numParts: 80
-        });
-      } else {
-        setDimensions({
-          numParts: 30
-        });
-      }
+  function setNumParts() {
+    if (window.innerWidth >= 420) {
+      numParts = 80;
+    } else {
+      numParts = 30;
     }
-    window.addEventListener("resize", handleResize);
-    // return window.removeEventListener("resize", handleResize);
-  });
+  }
+  /////////////////STATIC////////////////////
   //////////////////DYNAMIC////////////////////
-  ////////////////////////////////////////TESTING///////////////////////
+
+  // const [value, setDimensions] = useState({
+  //   numParts: 50
+  // });
+
+  // useEffect(() => {
+  //   function handleResize() {
+  //     if (window.innerWidth >= 420) {
+  //       setDimensions({
+  //         numParts: 80
+  //       });
+  //     } else {
+  //       setDimensions({
+  //         numParts: 30
+  //       });
+  //     }
+  //   }
+  //   window.addEventListener("resize", handleResize);
+  //   // return window.removeEventListener("resize", handleResize);
+  // });
+  //////////////////DYNAMIC////////////////////
+  //////////////////////TESTING///////////////////////
   return (
     <div className='particles'>
-      <div>numparts is : {value.numParts}</div>
+      {/* <div>numparts is : {value.numParts}</div> */}
+      <div>numparts is : {numParts}</div>
+      <div>window height is : {window.innerHeight}</div>
       <div className='particlesConditional'>
         <Particles
           canvasClassName='particles-canvas'
@@ -44,7 +59,7 @@ const ParticlesComponent = () => {
                 value: 2
               },
               number: {
-                value: value.numParts
+                value: numParts
               },
               line_linked: {
                 color: "#f9f500"
