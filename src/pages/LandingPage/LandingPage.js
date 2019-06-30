@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import arrows from "../../Icons/arrows.svg";
 import { TweenMax } from "gsap";
+// import setParticlesHook from "../../customHooks/SetParticlesHook";
 
 import "../../../src/App.css";
 
@@ -11,6 +12,8 @@ const LandingPage = () => {
 
   const scrollToRef = () =>
     window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+
+  ////////////////////////////////////////TESTING////////////////////////////////////////
 
   return (
     <React.Fragment>

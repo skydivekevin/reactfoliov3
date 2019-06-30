@@ -52,7 +52,7 @@
   max-width: 3vw;
   position: absolute;
   bottom: 2%;
-  color: #f0db4f ;
+  color: #f0db4f;
 }
 
 /* ////////////////////////About Page/////////////////////// */
@@ -64,6 +64,7 @@
   width: 100vw;
   background-color: white;
   text-align: left;
+  position: relative;
 }
 
 .about-page-row {
@@ -71,6 +72,7 @@
   flex-direction: row;
   align-content: space-evenly;
   width: 100vw;
+  /* height: 90%; */
 }
 
 .about-component {
@@ -86,7 +88,6 @@
   margin-top: 10vh;
   margin-right: 8vh;
   align-self: flex-start;
-  /* margin-left: 8vh; */
   margin-right: 8vh;
   align-content: flex-end;
   max-width: 50%;
@@ -107,6 +108,39 @@
   width: 100%;
 }
 
+/* /////////////////////////////////////////////FOOTER//////////////////////////////////// */
+
+.footer {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* flex-direction: row; */
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+  /* height: 10%; */
+}
+
+.footercontent {
+  display: flex;
+  color: #f0db4f;
+  height: 10px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.scrollUpButton {
+  align-self: flex end;
+  justify-self: flex-end;
+  right: 10px;
+  position: absolute;
+  /* display: flex-end; */
+}
+
 /* ///////////////////Particles///////////////////////////// */
 .particles-canvas {
   position: absolute;
@@ -116,4 +150,10 @@
   height: 100vh;
 }
 
+/* /////////////////////Media Queries/////////// */
 
+@media (max-width: 500px) {
+  .footercontent {
+    color: red;
+  }
+}
