@@ -19,8 +19,17 @@ export default class App extends Component {
 
   /////////////////TESTING//////////////////////
   colorChanger = () => {
+    const colorArr = [
+      "#062ecf",
+      "#e80505",
+      "#22bd17",
+      "#6d17bd",
+      "#df09e3",
+      "#ffa600"
+    ];
+    let randoColor = colorArr[Math.floor(Math.random() * colorArr.length)];
     this.setState({
-      color: "#062ecf"
+      color: randoColor
     });
   };
   render() {
