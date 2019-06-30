@@ -54,6 +54,12 @@
   bottom: 2%;
   color: #f0db4f;
 }
+.changeTheme {
+  top: 50px;
+  color: white;
+  z-index: 1;
+  position: absolute;
+}
 
 /* ////////////////////////About Page/////////////////////// */
 
@@ -133,12 +139,11 @@
   text-align: center;
 }
 
-.scrollUpButton {
-  align-self: flex end;
-  justify-self: flex-end;
+.scrollupdiv {
   right: 10px;
   position: absolute;
-  /* display: flex-end; */
+  font-size: 16px;
+  color: white;
 }
 
 /* ///////////////////Particles///////////////////////////// */
@@ -146,14 +151,15 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  /* z-index: -1; */
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 /* /////////////////////Media Queries/////////// */
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .footercontent {
     color: red;
   }
-}
+} */

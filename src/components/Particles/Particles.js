@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Particles from "react-particles-js";
 // import setParticlesHook from "../../customHooks/SetParticlesHook";
 
 import "../../../src/App.css";
 
-const ParticlesComponent = () => {
+const ParticlesComponent = props => {
   // 80 if window size >= 420; if window size <= 420 I want 30
 
   ///////////////////TESTING/////////////////////
@@ -44,15 +44,17 @@ const ParticlesComponent = () => {
   // });
   //////////////////DYNAMIC////////////////////
   //////////////////////TESTING///////////////////////
+
+  let color = props.theme;
+  const colorChanger = props.colorChanger;
   return (
     <div className='particles'>
-      {/* <div>numparts is : {value.numParts}</div> */}
-      <div>numparts is : {numParts}</div>
-      <div>window height is : {window.innerHeight}</div>
+      <div className='changeTheme' onClick={colorChanger}>
+        change theme
+      </div>
       <div className='particlesConditional'>
         <Particles
           canvasClassName='particles-canvas'
-          width='100vw'
           params={{
             particles: {
               size: {
@@ -62,7 +64,7 @@ const ParticlesComponent = () => {
                 value: numParts
               },
               line_linked: {
-                color: "#f9f500"
+                color: color
               }
             }
           }}

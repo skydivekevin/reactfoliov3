@@ -8,9 +8,9 @@ const Footer = () => {
     <React.Fragment>
       <div className='footer'>
         <h3 className='footercontent'>Hello from inside Footer</h3>
-        <button onClick={scrollToTop} className='scrollUpButton'>
+        <div onClick={scrollToTop} className='scrollupdiv'>
           Scroll to Top
-        </button>
+        </div>
       </div>
     </React.Fragment>
   );
