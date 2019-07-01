@@ -5,7 +5,7 @@ import Tech from "../../components/About/Tech";
 import Footer from "../../components/Footer/Footer";
 import "../../../src/App.css";
 
-const AboutPage = () => {
+const AboutPage = props => {
   return (
     <React.Fragment>
       <div className='about-page'>
@@ -13,7 +13,7 @@ const AboutPage = () => {
           <About />
           <Tech />
         </div>
-        <Footer />
+        <Footer color={props.color} />
       </div>
     </React.Fragment>
   );

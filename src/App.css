@@ -109,7 +109,6 @@
   flex-direction: row;
   align-content: space-evenly;
   width: 100vw;
-  /* height: 90%; */
 }
 
 .about-component {
@@ -153,11 +152,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* flex-direction: row; */
   bottom: 0;
   position: absolute;
   width: 100vw;
-  /* height: 10%; */
 }
 
 .footercontent {
@@ -175,6 +172,11 @@
   position: absolute;
   font-size: 16px;
   color: white;
+  height: 100%;
+}
+
+.scrollToTop {
+  top: 25%;
 }
 
 /* ///////////////////Particles///////////////////////////// */
@@ -182,9 +184,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  /* z-index: -1; */
-  /* width: 100vw;
-  height: 100vh; */
 }
 
 /* /////////////////////Media Queries/////////// */

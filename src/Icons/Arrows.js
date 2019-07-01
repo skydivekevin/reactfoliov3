@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 
 export default class Arrows extends Component {
-  constructor(props) {
-    super(props);
-    // this.state = {
-    //   fill: this.props.color
-    // };
-  }
   render() {
     return (
       <React.Fragment>

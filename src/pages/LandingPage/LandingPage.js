@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import arrows from "../../Icons/arrows.svg";
 import Arrows from "../../Icons/Arrows.js";
 import { TweenMax } from "gsap";
 import "../../../src/App.css";

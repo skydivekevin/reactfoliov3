@@ -75,7 +75,7 @@ export default class App extends Component {
           numberChanger={this.numberChanger}
         />
         <LandingPage color={this.state.color} />
-        <AboutPage />
+        <AboutPage color={this.state.color} />
       </div>
     );
   }

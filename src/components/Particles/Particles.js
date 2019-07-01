@@ -11,17 +11,17 @@ const ParticlesComponent = props => {
 
   ///////////////////TESTING/////////////////////
   /////////////////STATIC////////////////////
-  let numParts;
 
-  setNumParts();
+  // setNumParts();
 
-  function setNumParts() {
-    if (window.innerWidth >= 420) {
-      numParts = 100;
-    } else {
-      numParts = 30;
-    }
-  }
+  // function setNumParts() {
+  //   let numParts;
+  //   if (window.innerWidth >= 420) {
+  //     numParts = 100;
+  //   } else {
+  //     numParts = 30;
+  //   }
+  // }
   /////////////////STATIC////////////////////
   //////////////////DYNAMIC////////////////////
 
@@ -90,7 +90,6 @@ const ParticlesComponent = props => {
         />
       </div>
 
-      {/* //////////////////////changenumbertest/////////////////// */}
       <div className='particlesConditional'>
         <Particles
           canvasClassName='particles-canvas'

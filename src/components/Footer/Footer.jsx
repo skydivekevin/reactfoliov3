@@ -1,6 +1,7 @@
 import React from "react";
+import MiniParticles from "./MiniParticles";
 
-const Footer = () => {
+const Footer = props => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -9,7 +10,8 @@ const Footer = () => {
       <div className='footer'>
         <h3 className='footercontent'>Hello from inside Footer</h3>
         <div onClick={scrollToTop} className='scrollupdiv'>
-          Scroll to Top
+          <span className='scrollToTop'>Scroll to Top</span>
+          <MiniParticles color={props.color} />
         </div>
       </div>
     </React.Fragment>
