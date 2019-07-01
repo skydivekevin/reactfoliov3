@@ -1,5 +1,7 @@
 import React from "react";
 import Particles from "react-particles-js";
+import arrowright from "../../Icons/arrowright.svg";
+
 // import setParticlesHook from "../../customHooks/SetParticlesHook";
 
 import "../../../src/App.css";
@@ -15,7 +17,7 @@ const ParticlesComponent = props => {
 
   function setNumParts() {
     if (window.innerWidth >= 420) {
-      numParts = 80;
+      numParts = 100;
     } else {
       numParts = 30;
     }
@@ -46,22 +48,59 @@ const ParticlesComponent = props => {
   //////////////////////TESTING///////////////////////
 
   let color = props.theme;
+  let size = props.size;
+  let number = props.number;
+
   const colorChanger = props.colorChanger;
+  const sizeChanger = props.sizeChanger;
+  const numberChanger = props.numberChanger;
+  // const changeArrowColor = props.changeArrowColor;
   return (
     <div className='particles'>
-      <div className='changeTheme' onClick={colorChanger}>
-        change theme
+      <div className='arrowright'>
+        <h4 className='switchthemetext'>Switch Color</h4>
+        <img
+          src={arrowright}
+          className='arrowrighticon'
+          onClick={colorChanger}
+          alt='arrowright'
+        />
       </div>
+      {/* //////////////////////changesizetest/////////////////// */}
+      <div className='switchsize'>
+        <h4 className='switchsizetext'>Switch Size</h4>
+        <img
+          src={arrowright}
+          className='arrowrighticon'
+          onClick={sizeChanger}
+          alt='arrowright'
+        />
+      </div>
+
+      {/* //////////////////////changesizetest/////////////////// */}
+
+      {/* //////////////////////changenumbertest/////////////////// */}
+      <div className='switchnumber'>
+        <h4 className='switchnumbertext'>Switch Number</h4>
+        <img
+          src={arrowright}
+          className='arrowrighticon'
+          onClick={numberChanger}
+          alt='arrowright'
+        />
+      </div>
+
+      {/* //////////////////////changenumbertest/////////////////// */}
       <div className='particlesConditional'>
         <Particles
           canvasClassName='particles-canvas'
           params={{
             particles: {
               size: {
-                value: 2
+                value: size
               },
               number: {
-                value: numParts
+                value: number
               },
               line_linked: {
                 color: color

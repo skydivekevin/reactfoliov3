@@ -35,7 +35,7 @@ const LandingPage = props => {
           </div>
         </div>
         <div className='arrows-container' onClick={scrollToRef}>
-          <img src={arrows} className='arrows' alt='arrowsSVG' />
+          <img src={arrows} className='arrows' alt='arrowsSVG' fill='#000000' />
         </div>
       </div>
     </React.Fragment>

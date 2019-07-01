@@ -52,12 +52,43 @@
   max-width: 3vw;
   position: absolute;
   bottom: 2%;
-  color: #f0db4f;
+  color: #282c34;
+}
+.arrowright {
+  max-width: 3vw;
+  position: absolute;
+  top: 10px;
+  left: 4%;
+  max-height: 30px;
+  color: white;
+  z-index: 1;
+}
+
+.switchsize {
+  max-width: 3vw;
+  position: absolute;
+  top: 130px;
+  left: 4%;
+  max-height: 30px;
+  color: white;
+  z-index: 1;
+}
+.switchnumber {
+  max-width: 3vw;
+  position: absolute;
+  top: 250px;
+  left: 4%;
+  max-height: 30px;
+  color: white;
+  z-index: 1;
 }
 .changeTheme {
   top: 50px;
   color: white;
   z-index: 1;
+  position: absolute;
+}
+.arrowColorChangeButton {
   position: absolute;
 }
 
