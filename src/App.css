@@ -42,6 +42,7 @@
 .tagline {
   margin-top: 8vh;
   font-size: 2rem;
+  z-index: 1;
 }
 
 .intro-name {

@@ -28,7 +28,9 @@ export default class App extends Component {
       "#6d17bd",
       "#df09e3",
       "#ffa600",
-      "#F5E050"
+      "#F5E050",
+      "#42f5f5",
+      "#bf0202"
     ];
     let randoColor = colorArr[Math.floor(Math.random() * colorArr.length)];
     this.setState({
@@ -38,7 +40,7 @@ export default class App extends Component {
 
   ///////////////////////////////////////////
   sizeChanger = () => {
-    const sizeArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const sizeArr = [1, 3, 5, 7, 9, 11];
     let nextSize = parseInt(
       sizeArr[Math.floor(Math.random() * sizeArr.length)]
     );
@@ -49,7 +51,7 @@ export default class App extends Component {
   };
 
   numberChanger = () => {
-    const numArr = [10, 80, 150, 200];
+    const numArr = [10, 80, 150, 200, 275, 350];
     let nextNumber = numArr[Math.floor(Math.random() * numArr.length)];
     this.setState({
       number: nextNumber
