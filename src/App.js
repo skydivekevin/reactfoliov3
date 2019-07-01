@@ -64,7 +64,7 @@ export default class App extends Component {
     return (
       <div className='App'>
         <ParticlesComponent
-          theme={this.state.color}
+          color={this.state.color}
           size={this.state.size}
           number={this.state.number}
           colorChanger={this.colorChanger}
@@ -72,7 +72,7 @@ export default class App extends Component {
           sizeChanger={this.sizeChanger}
           numberChanger={this.numberChanger}
         />
-        <LandingPage theme={this.state.color} />
+        <LandingPage color={this.state.color} />
         <AboutPage />
       </div>
     );

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import arrows from "../../Icons/arrows.svg";
+import Arrows from "../../Icons/Arrows.js";
 import { TweenMax } from "gsap";
 import "../../../src/App.css";
 
@@ -17,6 +18,9 @@ const LandingPage = props => {
   //   console.log("event.target");
   // };
   // const [theme] = useState(initialTheme);
+  // const bigArrowChanger = () => {
+  //   console.log("hit bigArrowChanger");
+  // };
   ////////////////////////////////////////TESTING////////////////////////////////////////
 
   return (
@@ -35,7 +39,11 @@ const LandingPage = props => {
           </div>
         </div>
         <div className='arrows-container' onClick={scrollToRef}>
-          <img src={arrows} className='arrows' alt='arrowsSVG' fill='#000000' />
+          <Arrows
+            className='arrows'
+            onClick={scrollToRef}
+            color={props.color}
+          />
         </div>
       </div>
     </React.Fragment>

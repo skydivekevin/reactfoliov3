@@ -47,7 +47,7 @@ const ParticlesComponent = props => {
   //////////////////DYNAMIC////////////////////
   //////////////////////TESTING///////////////////////
 
-  let color = props.theme;
+  let color = props.color;
   let size = props.size;
   let number = props.number;
 
