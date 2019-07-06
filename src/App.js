@@ -12,9 +12,17 @@ export default class App extends Component {
     this.state = {
       color: "#F5E050",
       size: 2,
-      number: 100
+      number: 100,
+      screenPosition: window.innerHeight,
+      pageYOffset: window.pageYOffset
     };
+    this.someRefName = React.createRef();
   }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
   /////////////////TESTING//////////////////////
   // const initialTheme = "red";
   // const [theme, setTheme] = useState(initialTheme);
@@ -57,11 +65,16 @@ export default class App extends Component {
       number: nextNumber
     });
   };
+  handleScroll = () => {
+    // console.log("handleScroll in App.js");
+    let offsetTop = this.someRefName.current.offsetTop;
+    console.log(offsetTop);
+  };
   ///////////////////////////////////
 
-  changeArrowColor = () => {
-    console.log("arrowColorChanger triggered");
-  };
+  // changeArrowColor = () => {
+  //   console.log("arrowColorChanger triggered");
+  // };
   render() {
     return (
       <div className='App'>
@@ -75,7 +88,7 @@ export default class App extends Component {
           numberChanger={this.numberChanger}
         />
         <LandingPage color={this.state.color} />
-        <AboutPage color={this.state.color} />
+        <AboutPage color={this.state.color} ref={this.someRefName} />
       </div>
     );
   }
